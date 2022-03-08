@@ -23,7 +23,7 @@ function paintToDo(iro){
     const button = document.createElement('button');
     span.innerText = iro.text;
     li.id = iro.id;
-    button.innerText = '🤍';
+    button.innerText = '✔️';
     li.appendChild(span);
     li.appendChild(button);
     toDoList.appendChild(li);
