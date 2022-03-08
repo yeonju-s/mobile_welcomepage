@@ -1,6 +1,5 @@
 const imgs = [
     'imgs/phone-wallpaper1.jpg',
-    'imgs/phone-wallpaper2.jpg',
     'imgs/phone-wallpaper3.jpg',
     'imgs/phone-wallpaper4.jpg',
     'imgs/phone-wallpaper5.jpg',
