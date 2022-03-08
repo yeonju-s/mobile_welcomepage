@@ -17,7 +17,7 @@ function handleSubmitLogin(event){
     event.preventDefault();
     const userName = loginInput.value;
     localStorage.setItem(USERNAME_KEY, userName)
-    loginForm.classList.add(HIDDEN_KEY);
+    loginForm.style.display = "none";
     paintGreeting(userName);
 }
 
