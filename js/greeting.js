@@ -11,6 +11,7 @@ function paintGreeting(hi){
     greetingMessage.classList.remove(HIDDEN_KEY);
     greeting.classList.remove(HIDDEN_KEY);
     greetingMessage.innerText = `${hi} !`;
+    greeting.style.display = "flex";
 }
 
 function handleSubmitLogin(event){
