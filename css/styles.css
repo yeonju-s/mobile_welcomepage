@@ -1,0 +1,20 @@
+@import "variables.css";
+@import "clock.css";
+@import "todo-list.css";
+@import "greeting.css";
+@import "reset.css";
+@import "backgroundimgs.css";
+
+* {
+  font-family: "Source Sans Pro", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+/* fonts */

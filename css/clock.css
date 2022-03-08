@@ -1,0 +1,20 @@
+#clock {
+  display: flex;
+  margin-top: 20%;
+  font-family: "Times New Roman", Times, serif;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+#time {
+  font-size: 4em;
+}
+
+.clock__column {
+  margin-left: 10px;
+}
+.clock__column span {
+  font-size: 1.5em;
+}
+.clock__column h3 {
+  font-size: 2em;
+}
