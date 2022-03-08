@@ -1,14 +1,21 @@
 const time = document.getElementById('time');
 const timeSeconds = document.getElementById('seconds');
 const clockColumn = clock.querySelector('.clock__column')
-const ampm = clockColumn.querySelector('span')
+const daytime = clockColumn.querySelector('span')
+const date = document.getElementById('date');
 
+const dayOfWeek = ['일', '월', '화', '수', '목', '금', '토'];
+const monthOfYear = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12];
 
 const today = new Date();
 let todayYear = today.getFullYear();
-let todayMonth = today.getMonth();
+let todayMonth = monthOfYear[today.getMonth()];
 let todayDate = today.getDate();
-let todayDay = today.getDay();
+let todayDay = dayOfWeek[today.getDay()];
+
+date.innerText = `${todayYear}.${todayMonth}.${todayDate} (${todayDay})`;
+
+
 
 function intervalSeconds(){
     let today = new Date();
@@ -18,9 +25,9 @@ function intervalSeconds(){
     time.innerText = `${hours} : ${minutes}`;
     timeSeconds.innerText = `${seconds}`;
     if(hours >= 12){
-        ampm.innerText = `pm`;
+        daytime.innerText = `pm`;
     }else{
-        ampm.innerText = 'am';
+        daytime.innerText = 'am';
     }
 }
 

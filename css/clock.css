@@ -1,8 +1,14 @@
 #clock {
   display: flex;
+  flex-direction: column;
   margin-top: 20%;
   font-family: "Times New Roman", Times, serif;
   color: rgba(255, 255, 255, 0.8);
+  align-items: flex-end;
+}
+
+.clock__row {
+  display: flex;
 }
 
 #time {
@@ -17,4 +23,8 @@
 }
 .clock__column h3 {
   font-size: 2em;
+}
+
+#date {
+  font-size: 1.3em;
 }
